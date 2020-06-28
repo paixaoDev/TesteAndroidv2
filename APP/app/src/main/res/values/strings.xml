@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bank</string>
+    <string name="hint_user">User</string>
+    <string name="hint_password">Password</string>
+    <string name="text_btn_login">Login</string>
+    <string name="xt_ctn_logo">Logo do aplicativo</string>
+
+    <string name="error_password_alphanumeric">Você precisa colocar pelo menos UM numero em sua senha</string>
+    <string name="error_password_letter">Você precisa colocar pelo menos UMA letra maiuscula em sua senha</string>
+    <string name="error_password_special_chracter">Você precisa colocar pelo menos UM caractere especial em sua senha</string>
+    <string name="txt_currency_status">Recentes</string>
+    <string name="txt_saldo">Saldo</string>
+    <string name="txt_conta">Conta</string>
+</resources>

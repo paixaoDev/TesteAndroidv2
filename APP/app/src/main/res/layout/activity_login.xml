@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_bank_logo"
+        android:layout_width="@dimen/size_125"
+        android:layout_height="@dimen/size_70"
+        android:layout_marginTop="@dimen/margin_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_logo"
+        android:contentDescription="@string/xt_ctn_logo"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/holder_txt_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/margin_105"
+        android:layout_marginLeft="@dimen/margin_14"
+        android:layout_marginRight="@dimen/margin_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bank_logo">
+
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_user"
+            android:textSize="@dimen/text_16"
+            android:inputType="textEmailAddress"
+            android:autofillHints="@string/hint_user"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/holder_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        app:layout_constraintTop_toBottomOf="@+id/holder_txt_user"
+        android:layout_marginTop="@dimen/margin_25"
+        android:layout_marginRight="@dimen/margin_14"
+        android:layout_marginLeft="@dimen/margin_14">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_password"
+            android:textSize="@dimen/text_16"
+            android:inputType="textPassword"
+            android:autofillHints="@string/hint_password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin_25"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/text_btn_login"
+        android:textColor="@color/color_white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_16"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

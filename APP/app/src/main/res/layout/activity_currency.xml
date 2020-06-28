@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyActivity">
+
+    <FrameLayout
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/holder_margin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="@dimen/btn_min_size"
+        android:layout_height="@dimen/btn_min_size"
+        android:padding="@dimen/margin_5"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/margin_14"
+        android:layout_marginTop="@dimen/margin_14"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_25"
+        android:textColor="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/margin_14"
+        android:layout_marginTop="@dimen/margin_14"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_14"
+        android:layout_marginTop="@dimen/margin_25"
+        android:text="@string/txt_conta"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+    <TextView
+        android:id="@+id/txt_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_25"
+        android:textColor="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="@dimen/margin_14"
+        android:layout_marginTop="@dimen/margin_5"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_14"
+        android:layout_marginTop="@dimen/margin_25"
+        android:text="@string/txt_saldo"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_conta" />
+
+    <TextView
+        android:id="@+id/txt_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_25"
+        android:textColor="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_14"/>
+
+    <FrameLayout
+        android:id="@+id/holder_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_14"
+        app:layout_constraintTop_toBottomOf="@+id/txt_saldo" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_14"
+        android:layout_marginTop="@dimen/margin_14"
+        android:text="@string/txt_currency_status"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holder_margin" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_currency"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginTop="@dimen/margin_5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
